@@ -6,10 +6,23 @@
 </head>
 <body>
   <script>
-  var lastname = 'Doe';
-  var firstname = 'John';
-  var city = 'New-York';
-  alert('Nom : ' + lastname + '\n' + 'Prénom : ' + firstname + '\n' + 'Ville : ' + city);
+    // declaration des variables
+    var lastname = 'Doe';
+    var firstname = 'John';
+    var city = 'New-York';
+    // declaration des variables sur une ligne séparé par une virgule (solution 2)
+    var lastname = 'Doe', var firstname = 'John', var city = 'New-York';
+    // Affichage d'une boite de dialogue.
+    /*Le  \n permet un retour à la ligne. Le "+" est la concaténation mettre les caractères l'un
+    à la suite de l'autre*/
+    alert('Nom : ' + lastname + '\nPrénom : ' + firstname + '\nVille : ' + city);
+  </script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    var firstname = 'John';
+    var lastname = 'Doe';
+    var city = 'New-York';
+    swal('Nom : ' + lastname + '\nPrénom : ' + firstname + '\nVille : ' + city);
   </script>
 </body>
 </html>
